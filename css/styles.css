@@ -1,0 +1,62 @@
+/*
+File: styles.css
+GUI Assignment: Making a Multipication Table with js
+John Brann, UMass Lowell Computer Science, john_brann@student.uml.edu
+Copyright (c) 2024 by John. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+Created by JB on June 3, 2024 at 6:04 PM
+-->
+*/
+
+
+h1 {
+    color: #df3b3b;
+}
+
+/* divider line styling */
+hr {
+    color: #df3b3b;
+    width: 200px;
+    border-top: 2px solid;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+table, td, th {
+    border: 2px solid;
+}
+
+/* helps format the table so table boxes are not too big */
+table {
+    width: 15%;
+    border-collapse: collapse;
+}
+
+/* creates a checkerboard pattern to make the table easier to read */
+table tr:nth-child(even) td:nth-child(odd),
+table tr:nth-child(odd) td:nth-child(even) {
+  background-color: #eae7e7; /* Light gray */
+}
+
+/* #container {
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} */
+
+/* slider bars styling */
+#slider1, #slider2, #slider3, #slider4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 15px;
+  border-top: 2px solid;
+  margin-left: 0;
+  margin-right: auto;
+  font-size: 15px;
+  border-width: 0.4pc;
+  border-color: #3b64df;
+}

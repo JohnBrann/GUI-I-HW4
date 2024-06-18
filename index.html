@@ -1,0 +1,52 @@
+<!--
+File: index.html
+GUI Assignment: Input validation with jQuery
+John Brann, UMass Lowell Computer Science, john_brann@student.uml.edu
+Copyright (c) 2024 by John. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+Created by JB on June 12, 2024 at 6:04 PM
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Enter numbers to generate a table! </h1>
+      <form name="table" id="form">
+        <div class="rows">
+          Enter Row Bounds: 
+          <br> <hr>
+          <input id="rowLower" type="text" name="rowLower" placeholder="row lower bound: " ><br>
+          <div id = "slider1"> </div>
+          <input id="rowUpper" type="text" name="rowUpper" placeholder="row upper bound: " ><br>
+          <div id = "slider2"> </div>
+          <hr>
+        </div>
+        <div class="cols">
+          Enter Column Bounds: 
+          <br> <hr>
+          <input id="colLower" type="text" name="colLower" placeholder="column lower bound: " ><br>
+          <div id = "slider3"> </div>
+          <input id="colUpper" type="text" name="colUpper" placeholder="column upper bound: " ><br>
+          <div id = "slider4"> </div>
+          <hr>
+          <input id="submit-button" type="button" value="Generate Table:">
+          <hr>
+        </div>
+      </form>
+
+      <table id="table"></table>
+      <script src = "js/script.js"> </script>
+    </div> 
+
+  </body>
+</html>
